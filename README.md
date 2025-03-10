@@ -14,3 +14,6 @@ Esse repositório possui a ideia do "Efeito Protégé" ou "Técnica de Feynman" 
 
 
 - Mecânica
+
+
+- Estrutura de dados
