@@ -12,6 +12,6 @@ public class DeclaracaoSimplesObj {
     }
 
     public void quantidadeInst () {
-        System.out.println("Quantidade de objetos instanciados" + qtdInstancias);
+        System.out.println("Quantidade de objetos instanciados: " + qtdInstancias);
     }
 }
