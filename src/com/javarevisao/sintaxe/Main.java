@@ -10,6 +10,9 @@ public class Main {
         Input input1 = new Input();
         //input1.scaniar();
 
+        // exemplo funções
+        Funcoes objFuncao = new Funcoes();
+        System.out.print("Duas Strings concatenada por função: " + objFuncao.retorno2Strings("Hello ", "World"));
 
     }
 }
