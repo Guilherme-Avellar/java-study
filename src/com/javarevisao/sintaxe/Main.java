@@ -27,5 +27,9 @@ public class Main {
         // exemplo operadores logicos e ternario
         //objOp.operadoresLogi();
 
+        // if else em cadeia
+        IfElse objIf = new IfElse();
+        objIf.condicionais(70);
+
     }
 }
