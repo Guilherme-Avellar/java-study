@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         // Exemplo de instanciação de obj
         DeclaracaoSimplesObj obj1 = new DeclaracaoSimplesObj();
-        obj1.quantidadeInst();
+        //obj1.quantidadeInst();
 
         // exemplo input
         Input input1 = new Input();
@@ -12,7 +12,20 @@ public class Main {
 
         // exemplo funções
         Funcoes objFuncao = new Funcoes();
-        System.out.print("Duas Strings concatenada por função: " + objFuncao.retorno2Strings("Hello ", "World"));
+        //System.out.print("Duas Strings concatenada por função: " + objFuncao.retorno2Strings("Hello ", "World"));
+
+        // exemplo operadores aritmeticos
+        Operadores objOp = new Operadores();
+        //objOp.operadoresRe();
+
+        // exemplo operadores relacionais
+        //objOp.operadoresArit();
+
+        // exemplo operadores unitários
+        //objOp.operadoresUnit();
+
+        // exemplo operadores logicos e ternario
+        //objOp.operadoresLogi();
 
     }
 }

@@ -12,6 +12,7 @@ public class Funcoes {
         System.out.println("inteiro: " + a + ", double: " + b + ", char: " + c + ", String: " + d);
     }
 
+    // Retorna uma String. Pode retornar uma classe, aí coloca-se o nome da classe, como por exemplo String.
     public String retorno2Strings (String a, String b) {
         return a + b;
     }
