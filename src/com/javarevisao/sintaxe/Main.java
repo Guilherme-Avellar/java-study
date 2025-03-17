@@ -29,7 +29,14 @@ public class Main {
 
         // if else em cadeia
         IfElse objIf = new IfElse();
-        objIf.condicionais(70);
+        //objIf.condicionais(70);
+
+        // Exemplo de atribuição ternária
+        String atTernaria = 3 > 5 ? "3 é maior que 5" : "3 não é maior que cinco";
+
+        // exemplo switch case
+        SwitchCase objSwitch = new SwitchCase();
+        objSwitch.switchExpression(7);
 
     }
 }
