@@ -36,7 +36,11 @@ public class Main {
 
         // exemplo switch case
         SwitchCase objSwitch = new SwitchCase();
-        objSwitch.switchExpression(7);
+        //objSwitch.switchExpression(7);
+
+        EstruturasRepeticao objER = new EstruturasRepeticao();
+        //objER.estruturaDoWhile();
+        objER.estruturaFor();
 
     }
 }
