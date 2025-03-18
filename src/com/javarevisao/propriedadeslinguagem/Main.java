@@ -3,7 +3,6 @@ package com.javarevisao.propriedadeslinguagem;
 public class Main {
     public static void main(String[] args) {
 
-        TiposWrappers objTipoW = new TiposWrappers();
-        objTipoW.vantagensWrapper();
+        TiposWrappers.vantagensWrapper();
     }
 }

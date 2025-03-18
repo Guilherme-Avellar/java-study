@@ -2,7 +2,7 @@ package com.javarevisao.sintaxe;
 
 public class IfElse {
 
-    public void condicionais (int nota) {
+    public static void condicionais (int nota) {
         System.out.println("\nCondicionais com nota: " + nota);
 
         if (nota >= 90) {

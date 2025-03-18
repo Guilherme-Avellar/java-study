@@ -2,7 +2,7 @@ package com.javarevisao.sintaxe;
 
 public class SwitchCase {
 
-    public void switchTradicional (int dia) {
+    public static void switchTradicional (int dia) {
         System.out.println("Parametro: " + dia);
 
         switch (dia) {
@@ -34,7 +34,7 @@ public class SwitchCase {
 
     // Lembrando que é possível ter duas opções seguidas, caso tire o break
 
-    public void switchExpression (int dia) {
+    public static void switchExpression (int dia) {
         System.out.println("Parametro: " + dia);
 
         String diaSemana = switch (dia) {
@@ -50,6 +50,4 @@ public class SwitchCase {
 
         System.out.println("Hoje é: " + diaSemana);
     }
-
-
 }

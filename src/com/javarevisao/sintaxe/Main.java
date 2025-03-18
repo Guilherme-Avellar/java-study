@@ -2,47 +2,38 @@ package com.javarevisao.sintaxe;
 
 public class Main {
     public static void main(String[] args) {
-        // Exemplo de instanciação de obj
-        //DeclaracaoSimplesObj obj1 = new DeclaracaoSimplesObj();
-        //obj1.quantidadeInst();
 
         // exemplo input
-        Input input1 = new Input();
-        //input1.scaniar();
+        //Input.scaniar();
 
         // exemplo funções
-        Funcoes objFuncao = new Funcoes();
-        //System.out.print("Duas Strings concatenada por função: " + objFuncao.retorno2Strings("Hello ", "World"));
+        //System.out.println(Funcoes.retorno2Strings("Hello ", "World"));
 
         // exemplo operadores aritmeticos
-        Operadores objOp = new Operadores();
-        //objOp.operadoresRe();
+        //Operadores.operadoresArit();
 
         // exemplo operadores relacionais
-        //objOp.operadoresArit();
+        //Operadores.operadoresRe();
 
         // exemplo operadores unitários
-        //objOp.operadoresUnit();
+        //Operadores.operadoresUnit();
 
         // exemplo operadores logicos e ternario
-        //objOp.operadoresLogi();
+        //Operadores.operadoresLogi();
 
         // if else em cadeia
-        IfElse objIf = new IfElse();
-        //objIf.condicionais(70);
+        //IfElse.condicionais(70);
 
         // Exemplo de atribuição ternária
         String atTernaria = 3 > 5 ? "3 é maior que 5" : "3 não é maior que cinco";
 
         // exemplo switch case
-        SwitchCase objSwitch = new SwitchCase();
-        //objSwitch.switchExpression(7);
+        //SwitchCase.switchExpression(7);
 
-        EstruturasRepeticao objER = new EstruturasRepeticao();
-        //objER.estruturaDoWhile();
-        //objER.estruturaFor();
+        //EstruturasRepeticao.estruturaFor();
+        //EstruturasRepeticao.estruturaDoWhile();
 
-        TryCatch.excecoesIdeais();
+        //TryCatch.excecoesIdeais();
 
     }
 }

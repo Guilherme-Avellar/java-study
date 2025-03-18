@@ -2,7 +2,7 @@ package com.javarevisao.sintaxe;
 
 public class Operadores {
 
-    public void operadoresRe() {
+    public static void operadoresRe() {
         System.out.println("\nOperadores Relacionais com 2 e 3: ");
         System.out.println("2 == 3: " + (2 == 3));
         System.out.println("2 != 3: " + (2 != 3));
@@ -13,7 +13,7 @@ public class Operadores {
 
     }
 
-    public void operadoresArit () {
+    public static void operadoresArit () {
         System.out.println("\nOperadores Aritméticos:");
         System. out.println("2 + 3 = " + (2 + 3));
         System. out.println("2 - 3 = " + (2 - 3));
@@ -24,7 +24,7 @@ public class Operadores {
         System.out.println("2 elevado a 3 = " + (Math.pow(2, 3)));
     }
 
-    public void operadoresUnit () {
+    public static void operadoresUnit () {
         int x = 5;
         System.out.println("\nOperadores Unitários, com x = 5:\n");
 
@@ -53,7 +53,7 @@ public class Operadores {
 
     }
 
-    public void operadoresLogi () {
+    public static void operadoresLogi () {
         System.out.println("\nOperadores Logicos e ternario com x = 5, y = 7: ");
         int x = 5, y = 7;
         System.out.println("OR: x > 3 || y == 7: " + (x > 3 || y == 7));

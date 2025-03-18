@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class EstruturasRepeticao {
 
-    public void estruturaFor () {
+    public static void estruturaFor () {
         System.out.println("\nContgem de 0 a 9, pulando o 3 e parando no 5");
 
         for (int i = 0; i < 10; i++) {
@@ -23,7 +23,7 @@ public class EstruturasRepeticao {
     }
 
     // Mesmo código do for, mas traduzido para o while
-    public void estruturaWhile () {
+    public static void estruturaWhile () {
         System.out.println("\nContgem de 0 a 9, pulando o 3 e parando no 5");
 
         int contador = 0;
@@ -42,7 +42,7 @@ public class EstruturasRepeticao {
         }
     }
 
-    public void estruturaDoWhile () {
+    public static void estruturaDoWhile () {
         Scanner sc = new Scanner(System.in);
         int numero;
 

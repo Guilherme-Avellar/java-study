@@ -5,10 +5,9 @@ import java.util.Scanner;
 
 public class Input {
 
-    // Precisa declarar o objeto que vai agir e fazer a leitura no terminal
-    Scanner objScanner = new Scanner(System.in);
-
-    public void scaniar() {
+    public static void scaniar() {
+        // Precisa declarar o objeto que vai agir e fazer a leitura no terminal
+        Scanner objScanner = new Scanner(System.in);
 
         System.out.println("Digite alguma coisa: ");
 
@@ -16,6 +15,9 @@ public class Input {
         String varaivelInput = objScanner.nextLine();
 
         System.out.println("Foi digitado: " + varaivelInput);
+
+        // Precisa ser fechado depois de usado
+        objScanner.close();
     }
 
     /*
