@@ -108,18 +108,20 @@ public class TryCatch {
             sc.nextLine();
 
             if(idade >= 0 && idade < 18) {
-                throw new IllegalArgumentException("Proíbido para menores de 18\n");
+                throw new IllegalArgumentException("Proíbido para menores de 18 anos\n");
             } else if (idade < 0 || idade > 150) {
                 throw new IllegalArgumentException("Idade digitada incorretamente (inferior a 0 ou maior que 150)\n");
             }
 
         } catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());
+            sc.close();
             // para parar a execução do médoto
             return;
 
         }catch (InputMismatchException e) {
             System.err.println("Não foi digitado um número");
+            sc.close();
             return;
         }
 
@@ -139,8 +141,6 @@ public class TryCatch {
         } finally {
             sc.close();
         }
-        // obs se houver uma exceção no primeiro try o scanner não será fechado, mas não vou me preocupar
-        // com essa lógica agora.
 
         System.out.println("Nome digitado: " + nome);
         System.out.println("Idade digitada: " + idade);
