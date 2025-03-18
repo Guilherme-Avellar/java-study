@@ -3,7 +3,7 @@ package com.javarevisao.sintaxe;
 public class Main {
     public static void main(String[] args) {
         // Exemplo de instanciação de obj
-        DeclaracaoSimplesObj obj1 = new DeclaracaoSimplesObj();
+        //DeclaracaoSimplesObj obj1 = new DeclaracaoSimplesObj();
         //obj1.quantidadeInst();
 
         // exemplo input
@@ -40,7 +40,9 @@ public class Main {
 
         EstruturasRepeticao objER = new EstruturasRepeticao();
         //objER.estruturaDoWhile();
-        objER.estruturaFor();
+        //objER.estruturaFor();
+
+        TryCatch.excecoesIdeais();
 
     }
 }
