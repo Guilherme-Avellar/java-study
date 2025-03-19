@@ -31,6 +31,7 @@ public class Main {
         //SwitchCase.switchExpression(7);
 
         //EstruturasRepeticao.estruturaFor();
+        //EstruturasRepeticao.estruturaForAprimorado();
         //EstruturasRepeticao.estruturaDoWhile();
 
         //TryCatch.excecoesIdeais();

@@ -20,6 +20,23 @@ public class EstruturasRepeticao {
                 break;
             }
         }
+
+        // OBS: O for pode ter mais de uma variavel sendo percorrida ao mesmo tempo:
+        System.out.println("\n\nDuas variaveis de uma vez, i somando e j reduzindo até i < j");
+        for (int i = 0, j = 10; i < j; i++, j--) {
+            System.out.println(i + " - " + j);
+        }
+    }
+
+    public static void estruturaForAprimorado () {
+
+        // enhanced for ou for-each
+        // Utilizado para percorrer arrays e coleções sem precisar de um índice manual.
+        System.out.println("\nFor aprimorado 1 a 5 \nint num : numeros");
+        int[] numeros = {1, 2, 3, 4, 5};
+        for (int num : numeros) {
+            System.out.println(num);
+        }
     }
 
     // Mesmo código do for, mas traduzido para o while
