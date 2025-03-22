@@ -5,6 +5,8 @@ public class Main {
 
         //TiposWrappers.vantagensWrapper();
 
+        /*
+
         // instanciando para poder se usar o enum
         Enums e = Enums.MG;
         System.out.print("\n" + e.getNome());
@@ -17,5 +19,13 @@ public class Main {
         for(Enums e3: Enums.values()) {
             System.out.print("\n" + e3.getNome());
         }
+
+        */
+
+
+        // Exemplo de importação de uma classe feita manualmente:
+        PacotesVsImportacao.metodoImportado();
+
+
     }
 }
