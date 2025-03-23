@@ -24,7 +24,10 @@ public class Main {
 
 
         // Exemplo de importação de uma classe feita manualmente:
-        PacotesVsImportacao.metodoImportado();
+        //PacotesVsImportacao.metodoImportado();
+
+        // Funcionamento do .equals()
+        EqualsVsIgual.distincoes();
 
 
     }
