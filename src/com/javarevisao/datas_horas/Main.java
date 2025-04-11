@@ -6,6 +6,7 @@ public class Main {
         // Testes de LocalDate
         //Exemplo_LocalDate.Exemplo_LocalDate();
         //Exemplo_LocalTime.Exemplo_LocalTime();
+        //Exemplo_LocalDateTime.Exemplo_LocalDateTime();
 
 
     }
