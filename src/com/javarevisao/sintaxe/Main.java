@@ -36,5 +36,8 @@ public class Main {
 
         //TryCatch.excecoesIdeais();
 
+        // exemplo arrays
+        //ArraySimples.exemploArraySimples();
+
     }
 }
