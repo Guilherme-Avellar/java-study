@@ -1,8 +1,7 @@
-package com.javarevisao.estrutura_de_dados;
+package com.javarevisao.estrutura_de_dados.array_list;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 public class Exemplo_HashMap {
 
