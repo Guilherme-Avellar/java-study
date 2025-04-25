@@ -27,7 +27,13 @@ public class Main {
         //PacotesVsImportacao.metodoImportado();
 
         // Funcionamento do .equals()
-        EqualsVsIgual.distincoes();
+        //EqualsVsIgual.distincoes();
+
+        // Funções com referencia
+        Funcoes_ParametrosPorReferencia.exemploComWrappers();
+        Funcoes_ParametrosPorReferencia.exemploComArray();
+        Funcoes_ParametrosPorReferencia.exemploClassesInstanciadas();
+
 
 
     }
