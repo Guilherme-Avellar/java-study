@@ -17,8 +17,8 @@ public class Exemplo_insercao_inicio {
         public No prox;
     }
 
-    // Repare que o ponteiro prox é do tipo No, pois é o tipo de referencia que ele vai receber
-    // Esse tipo de declaração é conhecida como declaração recursiva.
+    // Repare que o ponteiro prox é do tipo No, pois é o tipo de referencia que ele vai receber, para
+    // encadeamento. Esse tipo de declaração é conhecida como declaração recursiva.
 
     public static void main(String[] args) {
 
@@ -27,7 +27,6 @@ public class Exemplo_insercao_inicio {
 
         // "lista" serve para ajustar as referencias do nó. Vai ser usada para "achar" a lista, e usada
         // para inserção
-
 
         // inserindo no inicio
         for(int i = 1; i < 4; i++) {
