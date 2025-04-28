@@ -11,7 +11,16 @@ package com.javarevisao.estrutura_de_dados.lista_linear_encadeada;
 
 public class Exemplo_insercao_inicio {
 
-    public static void exemplo() {
+    // Nó simples com um dado e um ponteiro para seu encadeamento
+    private static class No {
+        public int dado;
+        public No prox;
+    }
+
+    // Repare que o ponteiro prox é do tipo No, pois é o tipo de referencia que ele vai receber
+    // Esse tipo de declaração é conhecida como declaração recursiva.
+
+    public static void main(String[] args) {
 
         // instancia de lista apontando para null, referenciando null
         No lista = null;
