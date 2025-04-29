@@ -3,12 +3,15 @@ import java.util.Scanner;
 
 public class Todos_Os_Divisores {
 
+    // mais performace com number/2, pois nenhum número será divisível por um interiro
+    // maior que a sua metade, a não ser ele mesmo, que é posto depois do loop
     private static void testarMultiplo(int number, int progrecao) {
-        for (int i = 1; i <= number; i += progrecao) {
+        for (int i = 1; i <= number/2; i += progrecao) {
             if ((number % i) == 0) {
                 System.out.print(i + " ");
             }
         }
+        System.out.print(number + " ");
     }
 
     public static void main(String[] args) {
