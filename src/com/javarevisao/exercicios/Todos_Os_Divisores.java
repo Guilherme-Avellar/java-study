@@ -17,8 +17,6 @@ public class Todos_Os_Divisores {
 
         int number = scanner.nextInt();
 
-        int multiplo = 0;
-
         // aumenta a performace, pois um número ímpar nunca será divisível por um numero par
         if((number % 2) == 0){
             testarMultiplo(number, 1);
