@@ -62,4 +62,18 @@ public class Fibonacci {
 
      As variaveis foram reaproveitadas, "valor" fez o papel de f(n) e f(n-1).
      Agora "valorAnterior" faz o papel de f(n-2) e f(n-3).
+
+     ou seja, em:
+
+     valorAnterior = valor - valorAnterior;
+     ====> valorAnterior é f(n-3), mas depois da execução dessa linha passa a ser f(n-2)
+
+     valor = valor + valorAnterior;
+     ====> valor é ainda f(n-1) mas depois da execução dessa linha passa a ser f(n).
+
+     Lembrando que i é a posição que está sendo calculada. Quando i for igual a posição que
+     ser quer achar ele executará pela última vez, calculando o valor de Fibonacci daquela
+     posição, e a função logo depois o retornará
+
+
 */
