@@ -48,9 +48,18 @@ public class Fibonacci {
      etc...
 
      A sequencia de Fibonacci se baseia na soma dos dois numeros anteriores para gerar o próximo
-     então o número atual é o resultado dos dois
+     então o número atual é o resultado dos dois:
      f(n) = f(n-1) + f(n-2)
 
-     Foi reaproveitado a variavel "valor", ela faz o papel de f(n) e f(n-1).
-     Agora valorAnterior faz o papel de f(n-2).
+     Eu precisava encontrar e armazenar o valor de f(n-2) para usar no código, então eu fiz:
+
+     f(n-1) = f(n-2) + f(n-3) ==========> f(n-2) = f(n-1) - f(n-3)
+
+     ou seja:
+
+     f(n-2) = f(n-1) - f(n-3) ==========> valorAnterior = valor - valorAnterior;
+     f(n) = f(n-1) + f(n-2) ==========> valor = valor + valorAnterior;
+
+     As variaveis foram reaproveitadas, "valor" fez o papel de f(n) e f(n-1).
+     Agora "valorAnterior" faz o papel de f(n-2) e f(n-3).
 */
