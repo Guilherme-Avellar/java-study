@@ -43,7 +43,7 @@ public class arvoreBuscaBinaria {
     /* // minha primeira tentativa de fazer a inserção de ABB sem ver o material
     private static void preencher(Arvore no, int valor){
 
-        if (valor > no.dado) {
+        if (valor >= no.dado) {
             if (no.direita != null)
                 preencher(no.direita, valor);
             else {
@@ -72,10 +72,10 @@ public class arvoreBuscaBinaria {
             no.dado = valor;
             no.esquerda = null;
             no.direita = null;
-        } else if(valor < no.dado) {
+        } else if(valor < no.dado)
             no.esquerda = inserir(no.esquerda, valor);
-        } else
-            no.direita = inserir(no.direita, valor);
+            else
+                no.direita = inserir(no.direita, valor);
 
         return no;
     }
@@ -104,6 +104,9 @@ public class arvoreBuscaBinaria {
                             aux = aux.esquerda;
                         aux.esquerda = no.esquerda;
                         return ref;
+                        // A JVM consegue ver que não há referencia para esse "no" e liberara memória
+                        // automáticamente, se fosse em C, antes de retornar esse "ref" precisaria
+                        // liberar memória com o free() para depois sair dessa etapa recursiva.
                     }
                 }
             }
