@@ -1,4 +1,4 @@
-package com.javarevisao.estrutura_de_dados.array_list;
+package com.javarevisao.estrutura_de_dados.arrays.array_list;
 
 import java.util.ArrayList;
 import java.util.List;
