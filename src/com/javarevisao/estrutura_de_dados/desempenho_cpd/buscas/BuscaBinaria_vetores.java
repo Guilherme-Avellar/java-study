@@ -1,5 +1,8 @@
 package com.javarevisao.estrutura_de_dados.desempenho_cpd.buscas;
 
+import java.util.Arrays;
+
+
 // Essa busca divide por 2 o indice do vetor a cada chcagem do valor.
 // Usa-se o tamanho total do vetor e se vai ajustando os indices
 
@@ -7,7 +10,7 @@ package com.javarevisao.estrutura_de_dados.desempenho_cpd.buscas;
 
 public class BuscaBinaria_vetores {
 
-    private int buscaBinaria(int[] vetor, int valor) {
+    private static int buscaBinaria(int[] vetor, int valor) {
         int posicao = -1;
 
         int i_baixo = 0;
@@ -33,5 +36,11 @@ public class BuscaBinaria_vetores {
 
     public static void main(String[] args) {
 
+        int[] vetorExemplo = {64, 34, 25, 12, 22, 11, 90};
+        // a busca binária só funciona em estuturas ordenadas (nesse caso um vetor)
+        Arrays.sort(vetorExemplo);
+
+        System.out.println("Buscando o 25: " + buscaBinaria(vetorExemplo, 34));
+        System.out.println("Buscando o 99: " + buscaBinaria(vetorExemplo, 99));
     }
 }
