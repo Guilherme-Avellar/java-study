@@ -1,4 +1,4 @@
-package com.javarevisao.estrutura_de_dados.arrays.arrays_nativos;
+package com.javarevisao.estrutura_de_dados.listas.arrays_nativos;
 
 import java.util.Scanner;
 
