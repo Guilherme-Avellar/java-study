@@ -1,11 +1,7 @@
 package com.javarevisao.manipulacao_de_arquivos;
 
 // As classes usadas estão nos pacotes java.io e java.nio.file
-
-// prepara um arquivo para ser manipulado
 import java.io.*;
-// uma classe para ler arquivos de texto, que lê caracteres
-// aumenta a eficiencia de leitura e fornece metodos praticos para facilitar a leitura
 
 
 public class A_LeituraArquivos {
