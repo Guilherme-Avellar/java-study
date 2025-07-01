@@ -15,7 +15,6 @@ public class Consecutivos {
             todosNumeros[i] = scanner.nextInt();
         }
 
-
         Contagem contagemPrincipal = new Contagem();
         int index = 0;
 
@@ -47,7 +46,7 @@ public class Consecutivos {
 
 /*
     Aparendizado do dia: A ordem da esquerda para direita é muito importante e básica,
-    mas às vezes nos esquecemos dela. Neste problema eu estáva fazendo na linha 27:
+    mas às vezes nos esquecemos dela. Neste problema eu estáva fazendo na linha 26:
     (todosNumeros[index] == contagemSecundaria.valor) && (index < todosNumeros.length)
 
     Ou seja, verificava o conteúdo do vetor primeiro, o que gerava um
