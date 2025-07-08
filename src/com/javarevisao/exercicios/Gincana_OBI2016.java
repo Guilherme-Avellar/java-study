@@ -11,26 +11,24 @@ public class Gincana_OBI2016 {
         boolean condicao = true;
 
         while (condicao) {
-            if (M == 1) {
+            if (calcularMDC(M, N) == 1)
                 condicao = false;
-            }else if ((N % M != 0) && isPrime(M)) {
-                condicao = false;
-            }else
-                M -= 1;
+            else
+                M--;
         }
+
         System.out.println(M);
     }
 
-    private static boolean isPrime(long number) {
-        for (long i = number/2; i > 1; i--) {
-            if (number % i == 0)
-                return false;
+    // Algoritmo de Euclides
+    private static long calcularMDC(long x, long y) {
+        while (y != 0) {
+            long resto = x % y;
+            x = y;
+            y = resto;
         }
-        return true;
+        return x;
     }
 }
 
-
 // N é o número de pessoas da turma rival e M é da sua turma
-
-// N precisa ser primo e não pode ser igual ou dividir M
