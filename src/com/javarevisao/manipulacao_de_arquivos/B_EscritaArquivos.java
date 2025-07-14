@@ -30,3 +30,17 @@ public class B_EscritaArquivos {
 
     }
 }
+
+/*
+    Outra forma de escrever em arquivos é usando apenas o File com metodo write, exemplo:
+    Files.write(path, stringQualquer.getBytes(standardCharsets.UTF_8));
+    faz o processo de transformar a string em bytes e passar para escrita, que interpreta
+    os bytes normalmente, escrevendo o conteúdo no arquivo.
+ */
+
+/*
+    É possível criar um arquivo "sem fazer nada nele" (para manipular depois etc.
+    basta instanciar um objeto do File com o nome do arquivo e depois usar o metodo
+    .createNewFile() nesse proprio objeto, mas pode lançar uma exceção caso já exista,
+    então é necessário usar o try catch.
+ */
