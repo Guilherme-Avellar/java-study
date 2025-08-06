@@ -147,4 +147,42 @@ public class TryCatch {
 
         // repare que IllegalArgumentException está sendo tratado duas vezes mas de formas diferentes.
     }
+
+    // É possível criar uma Exceção para um problema específico. Não são nada menos que classes
+    public static void excecoesCriadasManualmente(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite algo: ");
+        String algo = sc.nextLine();
+        System.out.print("Digite algo novamente: ");
+        String algo2 = sc.nextLine();
+
+        // Exemplo de exceção de RuntimeException (não presisam de try-catch, mas pode usar)
+        exemploException(algo);
+
+        try {
+            // precisa usar try-catch para chamar essa função, pois ela pode lançar uma exceção do tipo Exception
+            exemploException2(algo);
+        } catch (ExcecaoCriada2Exception e) {
+            System.err.println(e.getMessage());
+
+        // Sempre se começa com os catchs de Exceções específicas para depois tratar as mais gerais.
+        // Não se pode usar o Exception antes, pois ele abranje o ExcecaoCriada2Exception que foi criado manualmente.
+        } catch (Exception e) {
+            System.out.println("Lembre-se de seguir a hierarquia de exceções");
+        }
+    }
+
+    // A palavra-chave throws serve para avisar ao compilador e ao programador que
+    // o metodo pode lançar tal exceção
+    private static void exemploException(String algo) throws ExcecaoCriadaException{
+        if(!algo.equals("a")) {
+            throw new ExcecaoCriadaException();
+        }
+    }
+
+    private static void exemploException2(String algo) throws ExcecaoCriada2Exception{
+        if(!algo.equals("b")) {
+            throw new ExcecaoCriada2Exception();
+        }
+    }
 }

@@ -25,7 +25,7 @@ public class Main {
         //IfElse.condicionais(70);
 
         // Exemplo de atribuição ternária
-        String atTernaria = 3 > 5 ? "3 é maior que 5" : "3 não é maior que cinco";
+        //String atTernaria = 3 > 5 ? "3 é maior que 5" : "3 não é maior que cinco";
 
         // exemplo switch case
         //SwitchCase.switchExpression(7);
@@ -38,6 +38,9 @@ public class Main {
 
         // exemplo arrays
         //ArraySimples.exemploArraySimples();
+
+        // Como criar exceções e usa-las
+        TryCatch.excecoesCriadasManualmente();
 
     }
 }
