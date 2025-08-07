@@ -2,6 +2,7 @@ package com.javarevisao.estrutura_de_dados.listas.Map_HashMap;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Iterator;
 
 /*
     A principal funcionalidade é fazer uma lista de pares de classes,
@@ -41,6 +42,16 @@ public class Exemplo1 {
             System.out.println(variavel.getKey() + ": " +variavel.getValue());
         }
 
+        // Forma mais simples de se fazer um while com Map:
+        // Junta-se todas as chaves e as percorre
+        Iterator<String> chaves = listaQualquer.keySet().iterator();
+        // do tipo String porque listaQualquer possui as chaves em forma de String
+        while (chaves.hasNext()) {
+            String chaveEspecifica = chaves.next();
+            Double conteudo = listaQualquer.get(chaveEspecifica);
+            System.out.println("Chave: " + chaveEspecifica + ", Conteúdo: " + conteudo);
+        }
+
     }
 }
 
@@ -60,4 +71,9 @@ public class Exemplo1 {
     com um loop for-each para iterar sobre o mapa e exibir todas as chaves (texto) e seus valores
     correspondentes (double):
     for (Map.Entry<String, Double> variavel : listaQualquer.entrySet()).
+ */
+
+/*
+    A Classe TreeMap possui a mesma ideia das variações do Set.
+    TreeMap ordena na inserção (por ordem alfabética, ordem crescente etc)
  */

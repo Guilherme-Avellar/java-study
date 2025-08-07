@@ -14,8 +14,13 @@ public class Exemplo_ArrayList {
 
     public static void main(String[] args) {
 
+        // O ArrayList segue o seguinte padrão:
         // List<ClasseQualquer> nomeDaLista = new ArrayList<>()
         List<String> lista1 = new ArrayList<>();
+
+        // Esse <> depois do List é chamado de Generics. Que é onde se decide
+        // o tipo de dado que será armazenado na lista. Nesse caso, String.
+        // Muitas outras coleções usam o Generics, como Map, Set, etc...
 
         // adicionando elementos
         lista1.add("Azul");
