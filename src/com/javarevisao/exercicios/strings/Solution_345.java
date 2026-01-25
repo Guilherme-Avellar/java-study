@@ -1,29 +1,36 @@
 package com.javarevisao.exercicios.strings;
 
-//345. Reverse Vowels of a String
+// 345. Reverse Vowels of a String
 
 class Solution_345 {
     public static void main(String[] args) {
+        System.out.println(reverseVowels("ai"));
     }
-    public String reverseVowels(String s) {
-        StringBuilder sBuilder = new StringBuilder(s);
-        int i = 0, j = s.length()-1 ;
+
+    private static String reverseVowels(String s) {
+        char[] sChar = s.toCharArray();
+        char aux;
+        int i = 0, j = sChar.length-1 ;
+
         while (i < j) {
-            if (isVowel(s.charAt(i)) && isVowel(s.charAt(j))) {
-                sBuilder.setCharAt(i, s.charAt(j));
-                sBuilder.setCharAt(j, s.charAt(i));
+            if (isVowel(sChar[i]) && isVowel(sChar[j])) {
+                aux = sChar[i];
+                sChar[i] = sChar[j];
+                sChar[j] = aux;
                 i++; j--;
             }
-            if (!isVowel(s.charAt(i))) i++;
-            if (!isVowel(s.charAt(j))) j--;
+            if (!isVowel(sChar[i])) i++;
+            if (!isVowel(sChar[j])) j--;
         }
-        return sBuilder.toString();
+
+        return new String(sChar);
     }
-    private boolean isVowel (char c) {
-        if ((int) c >= 97)
-            c = (char) (c - 32);
+
+    private static boolean isVowel (char c) {
+        if (c >= 97) c = (char) (c - 32);
+
         return switch (c) {
-            case 65, 69, 73, 79, 85 -> true;
+            case 'A', 'E', 'I', 'O', 'U' -> true;
             default -> false;
         };
     }
