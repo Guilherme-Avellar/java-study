@@ -1,0 +1,42 @@
+# Eclipse
+.metadata/
+.settings/
+.project
+.classpath
+
+# Build / Deploy
+/build/
+/bin/
+/out/
+/target/
+
+# Servidores (Tomcat, etc)
+/Servers/
+/tmp/
+/work/
+
+*.class
+
+# Arquivos temporários
+*.tmp
+*.swp
+*~
+
+*.launch
+
+# Dependências
+/lib/*.jar
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# WAR/EAR
+*.war
+*.ear
+
+node_modules/
+
+# Arquivos de IDE alternativa
+.idea/
+.vscode/
