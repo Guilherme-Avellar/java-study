@@ -5,38 +5,41 @@
 .classpath
 
 # Build / Deploy
-/build/
-/bin/
-/out/
-/target/
+build/
+bin/
+out/
+target/
 
-# Servidores (Tomcat, etc)
-/Servers/
-/tmp/
-/work/
+# Servidores (Tomcat)
+Servers/
+tmp/
+work/
 
+# Java
 *.class
 
-# Arquivos temporários
+# Temporários
 *.tmp
 *.swp
 *~
 
+# Config
 *.launch
 
 # Dependências
-/lib/*.jar
+lib/*.jar
 
-# Sistema operacional
+# Sistema
 .DS_Store
 Thumbs.db
 
-# WAR/EAR
+# Deploy
 *.war
 *.ear
 
+# Node
 node_modules/
 
-# Arquivos de IDE alternativa
+# IDEs
 .idea/
 .vscode/
