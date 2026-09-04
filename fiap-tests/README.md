@@ -28,7 +28,7 @@ contra a API rodando em `http://localhost:8080`.
 **Opção A — direto pelo Maven:**
 
 ```bash
-./mvnw spring-boot:run
+mvn spring-boot:run
 ```
 
 **Opção B — via Docker:**
@@ -62,7 +62,7 @@ curl http://localhost:8080/entregas/health
 ### 2. Rode os testes
 
 ```bash
-./mvnw test
+mvn test
 ```
 
 > Se a API não estiver no ar, **todos os testes falham** com `Connection refused`.

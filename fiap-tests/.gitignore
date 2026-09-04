@@ -1,8 +1,16 @@
 HELP.md
 target/
-!.mvn/wrapper/maven-wrapper.jar
+
+### Artefatos de build ###
+*.jar
+*.war
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+### Maven wrapper (assume-se Maven instalado) ###
+mvnw
+mvnw.cmd
+.mvn/
 
 ### STS ###
 .apt_generated
