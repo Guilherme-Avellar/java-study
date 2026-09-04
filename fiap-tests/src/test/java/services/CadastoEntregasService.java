@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 public class CadastoEntregasService {
 
     EntregaModel entregaModel = new EntregaModel();
-    Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
+    public Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
     public Response response;
     // url da api, como nesse caso é apenas estudo, etá como localhost mesmo
     String baseUrl = "http://localhost:8080";
