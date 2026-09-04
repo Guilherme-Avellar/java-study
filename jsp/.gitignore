@@ -26,8 +26,9 @@ work/
 # Config
 *.launch
 
-# Dependências
-lib/*.jar
+# Dependências (resolvidas pelo Maven, não versionadas)
+**/lib/*.jar
+**/WEB-INF/lib/
 
 # Sistema
 .DS_Store
