@@ -15,6 +15,7 @@ public class CadastoEntregasService {
     public Response response;
     // url da api, como nesse caso é apenas estudo, etá como localhost mesmo
     String baseUrl = "http://localhost:8080";
+    String idDelivery;
 
     public void setFieldsDelivery(String field, String value) {
         switch (field) {
@@ -35,6 +36,21 @@ public class CadastoEntregasService {
                 .body(body)
                 .when()
                 .post(url)
+                .then()
+                .extract()
+                .response();
+    }
+
+    public void retrieveId() {
+        idDelivery = String.valueOf(gson.fromJson(response.jsonPath().prettify(), EntregaModel.class).getNumeroPedido());
+    }
+
+    public void deleteDelivery(String endpoint) {
+        String url = baseUrl + endpoint;
+        response = given().contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .when()
+                .delete(url)
                 .then()
                 .extract()
                 .response();

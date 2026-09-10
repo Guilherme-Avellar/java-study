@@ -38,4 +38,12 @@ public class CadastroEntregasSteps {
         );
         Assert.assertEquals(message, errorMessageModel.getMessage());
     }
+
+    @Dado("que eu recupere o ID criado no contexto")
+    public void queEuRecupereOIDCriadoNoContexto() {
+    }
+
+    @Quando("eu enviar o ID na requisição para o endpoint {string} de deleção de entregas")
+    public void euEnviarOIDNaRequisicaoParaOEndpointDeDelecaoDeEntregas(String endpoint) {
+    }
 }
