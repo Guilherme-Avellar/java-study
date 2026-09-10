@@ -9,5 +9,3 @@ out/
 # Logs
 *.log
 
-**/test*.*
-
