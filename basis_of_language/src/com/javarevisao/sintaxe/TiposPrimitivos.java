@@ -55,6 +55,13 @@ public class TiposPrimitivos {
     // Exemplo:
     int numeroComEspacos = 2_000_000;
 
+    static void main(String[] args) {
+        System.out.println("a - A: " + ((int) 'a' - (int) 'A'));
+        System.out.println("a: " + (int) 'a');
+        System.out.println("A: " + (int) 'A');
+        System.out.println("z: " + (int) 'z');
+    }
+
 
     /*
     Algumas palavras reservadas:
