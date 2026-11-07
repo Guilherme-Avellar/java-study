@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Texto_lista {
 
+    // como se fosse uma interface de função
     @FunctionalInterface
     interface Transformador {
         String transformador (String texto);
@@ -22,14 +23,24 @@ public class Texto_lista {
 
         List<String> lista = List.of("java", "lambda", "funcional");
 
-        System.out.println("tudo em maiúsculo: " + aplicar(lista, s -> s.toUpperCase()));
+        // A implementação da FunctionalInterface acontece dentro da lâmbda.
+        System.out.println("tudo em maiúsculo: " + aplicar(lista, s -> {
+            StringBuilder novoTexto = new StringBuilder(s);
+            for (int i = 0; i < novoTexto.length(); i++) {
+                if((int) novoTexto.charAt(i) >= 'a' && (int) novoTexto.charAt(i) <= 'z')
+                    novoTexto.setCharAt(i, (char) ((int) (novoTexto.charAt(i)) - 32));
+            }
+            return novoTexto.toString();
+        }));
 
-        System.out.println("tudo invertido: " + aplicar(lista, (s) -> {
+        System.out.println("texto invertido: " + aplicar(lista, (s) -> {
             StringBuilder nova = new StringBuilder();
             for (int i = s.length() - 1; i >= 0; i--) {
                 nova.append(s.charAt(i));
             }
             return nova.toString();
         }));
+
+        
     }
 }
